@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+.header1{
+    display: flex;
+    justify-content:space-between;
+}
+.logo{
+    width: 10%;
+}
+
+.logo >img{
+    width: 90%;
+
+}
+
+
+.navber ul {
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.navber ul li {
+    padding: 38px 30px;
+    color: rgb(48, 47, 47);
+    font-size: 23px;
+    transition: 0.3s;
+    font-weight: 1000;
+}
+
+.navber ul li:hover {
+    color: #1991d6;
+    transform: translateY(-2px);
+}
+
+.navber ul li a{
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:68px;
+    padding: 15px;
+}
+
+.button a {
+    text-decoration: none;
+    padding: 10px 22px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+    
+}
+
+.button a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
