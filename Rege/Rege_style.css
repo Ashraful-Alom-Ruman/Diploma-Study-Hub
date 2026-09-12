@@ -5,6 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #316ddb, #756e2e);
+    background-image: url(/ankor_page/login_img/background.jpg);
+    mask-repeat: none;
 }
 
 .container {
@@ -16,8 +18,8 @@ body {
 .register-form {
     width: 100%;
     padding: 35px 40px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(26, 10, 54, 0.12);
+    border: 1px solid rgba(16, 72, 226, 0.2);
     border-radius: 20px;
     backdrop-filter: blur(15px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
