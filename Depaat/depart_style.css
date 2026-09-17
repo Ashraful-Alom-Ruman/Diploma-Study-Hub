@@ -296,4 +296,993 @@ footer{
 }
 
 
+@import "tailwindcss";
 
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.logo {
+    width: 10%;
+    flex-shrink: 0;
+}
+
+.logo > img {
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navber {
+    flex: 1;
+}
+
+.navber ul {
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navber ul li {
+    padding: 38px 30px;
+    color: rgb(48, 47, 47);
+    font-size: 23px;
+    transition: 0.3s;
+    font-weight: 1000;
+}
+
+.navber ul li:hover {
+    color: #1991d6;
+    transform: translateY(-2px);
+}
+
+.navber ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER BUTTON
+   ========================= */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+.button a {
+    text-decoration: none;
+    padding: 10px 22px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.button a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   DEPARTMENT PAGE
+   ========================= */
+
+.departments-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 7%;
+    background: #f5f7fa;
+}
+
+
+/* =========================
+   DEPARTMENT HEADER
+   ========================= */
+
+.department-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.department-title {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.department-subtitle {
+    font-size: 19px;
+    color: #667085;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SEARCH
+   ========================= */
+
+.department-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form {
+    width: 100%;
+    max-width: 550px;
+}
+
+.search-input {
+    width: 100%;
+    height: 52px;
+    padding: 0 25px;
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    background: white;
+}
+
+.search-input:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   DEPARTMENT CONTAINER
+   ========================= */
+
+.departments-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px;
+}
+
+
+/* =========================
+   DEPARTMENT CARD
+   ========================= */
+
+.department-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 330px;
+
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 18px;
+    border: 1px solid #e4e7ec;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.department-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   CARD IMAGES
+   ========================= */
+
+.department-images {
+    width: 100%;
+    height: 155px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+
+    gap: 6px;
+    margin-bottom: 18px;
+
+    min-width: 0;
+}
+
+.department-images img {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.department-images img:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.department-images img:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.department-images img:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.department-images img:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.department-images img:nth-child(5) {
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+
+
+/* =========================
+   CARD NAME
+   ========================= */
+
+.department-name {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.department-name h3 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1d2939;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   CARD FOOTER
+   ========================= */
+
+.department-footer {
+    width: 100%;
+    margin-top: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+    min-width: 0;
+}
+
+.department-info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    min-width: 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    min-width: 0;
+}
+
+.info-item img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.info-number {
+    font-size: 30px;
+    font-weight: 950;
+    color: #1d2939;
+}
+
+.info-text {
+    font-size: 18px;
+    color: #667085;
+}
+
+
+/* =========================
+   EXPLORE BUTTON
+   ========================= */
+
+.explore-btn {
+    background: #2563eb;
+    color: white;
+
+    padding: 12px 20px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 900;
+
+    transition: 0.3s;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+    flex-shrink: 0;
+
+    max-width: 100%;
+}
+
+.explore-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    width: 100%;
+
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+
+    padding: 29px 57px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+
+    gap: 20px;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #222;
+}
+
+.footer-nav a:hover {
+    color: #1565c0;
+}
+
+.year-hub {
+    display: flex;
+    gap: 5px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.year-hub p {
+    margin: 0;
+}
+
+
+/*  LARGE TABLET / SMALL DESKTOP */
+
+@media (max-width: 1200px) {
+
+    .header1 {
+        padding: 0 25px;
+    }
+
+    .logo {
+        width: 13%;
+    }
+
+    .navber ul li {
+        padding: 30px 16px;
+        font-size: 20px;
+    }
+
+    .button {
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .button a {
+        padding: 9px 16px;
+        font-size: 17px;
+    }
+
+
+    /* Cards */
+
+    .departments-page {
+        padding: 45px 5%;
+    }
+
+    .departments-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .department-card {
+        padding: 16px;
+    }
+
+    .department-images {
+        height: 145px;
+    }
+
+    .department-name h3 {
+        font-size: 29px;
+    }
+
+    .department-info {
+        gap: 10px;
+    }
+
+    .info-number {
+        font-size: 24px;
+    }
+
+    .info-text {
+        font-size: 15px;
+    }
+
+    .info-item img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .explore-btn {
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 25px 35px;
+        font-size: 20px;
+    }
+}
+
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    /* Header */
+
+    .header1 {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .logo > img {
+        width: 100%;
+    }
+
+    .navber {
+        width: 100%;
+        flex: none;
+        order: 3;
+    }
+
+    .navber ul {
+        margin: 5px 0;
+        padding: 5px 0;
+        flex-wrap: wrap;
+    }
+
+    .navber ul li {
+        padding: 12px 14px;
+        font-size: 17px;
+    }
+
+    .button {
+        margin-left: auto;
+        gap: 8px;
+        padding: 5px;
+    }
+
+    .button a {
+        padding: 8px 13px;
+        font-size: 15px;
+    }
+
+
+    /* Page */
+
+    .departments-page {
+        padding: 40px 4%;
+    }
+
+    .department-header {
+        margin-bottom: 35px;
+    }
+
+    .department-title {
+        font-size: 36px;
+    }
+
+    .department-subtitle {
+        font-size: 17px;
+    }
+
+
+    /* Cards */
+
+    .departments-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .department-card {
+        min-height: 310px;
+        padding: 16px;
+    }
+
+    .department-images {
+        height: 145px;
+    }
+
+    .department-name {
+        margin-bottom: 20px;
+    }
+
+    .department-name h3 {
+        font-size: 26px;
+    }
+
+    .department-footer {
+        gap: 8px;
+    }
+
+    .department-info {
+        gap: 8px;
+        flex: 1;
+    }
+
+    .info-item {
+        gap: 5px;
+    }
+
+    .info-item img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .info-number {
+        font-size: 21px;
+    }
+
+    .info-text {
+        font-size: 13px;
+    }
+
+    .explore-btn {
+        padding: 9px 12px;
+        font-size: 14px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 22px 25px;
+        font-size: 17px;
+    }
+
+    .footer-nav ul {
+        gap: 14px;
+    }
+}
+
+
+/* MOBILE responsive*/
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    .header1 {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        width: 22%;
+    }
+
+    .logo > img {
+        width: 100%;
+    }
+
+    .button {
+        gap: 5px;
+        padding: 0;
+    }
+
+    .button a {
+        padding: 7px 9px;
+        font-size: 13px;
+    }
+
+    .navber {
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .navber::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navber ul {
+        width: max-content;
+        min-width: 100%;
+
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        margin: 5px 0;
+        padding: 5px 0;
+    }
+
+    .navber ul li {
+        padding: 10px 12px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+
+    /* Page */
+
+    .departments-page {
+        padding: 30px 15px 40px;
+    }
+
+    .department-header {
+        margin-bottom: 28px;
+    }
+
+    .department-title {
+        font-size: 29px;
+        line-height: 1.2;
+    }
+
+    .department-subtitle {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+
+    /* Search */
+
+    .search-form {
+        width: 100%;
+    }
+
+    .search-input {
+        height: 48px;
+        padding: 0 17px;
+        font-size: 15px;
+    }
+
+
+    /* Cards */
+
+    .departments-container {
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .department-card {
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+        padding: 15px;
+        border-radius: 13px;
+    }
+
+
+    /* Images */
+
+    .department-images {
+        width: 100%;
+        height: 160px;
+        gap: 5px;
+        margin-bottom: 16px;
+    }
+
+    .department-images img {
+        min-width: 0;
+    }
+
+
+    /* Name */
+
+    .department-name {
+        margin-bottom: 18px;
+    }
+
+    .department-name h3 {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+
+    /* Card Info */
+
+    .department-footer {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+    .department-info {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 8px;
+    }
+
+    .info-item {
+        gap: 5px;
+    }
+
+    .info-item img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .info-number {
+        font-size: 19px;
+    }
+
+    .info-text {
+        font-size: 13px;
+    }
+
+
+    /* Explore */
+
+    .explore-btn {
+        width: 100%;
+        height: 46px;
+
+        padding: 10px 15px;
+
+        font-size: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 8px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        width: 100%;
+
+        padding: 22px 15px;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        font-size: 15px;
+
+        gap: 15px;
+    }
+
+    .footer-nav {
+        width: 100%;
+    }
+
+    .footer-nav ul {
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px 15px;
+    }
+
+    .year-hub {
+        justify-content: center;
+    }
+}
+
+
+/* SMALL MOBILE responsive */
+
+@media (max-width: 400px) {
+
+    /* Header */
+
+    .header1 {
+        padding: 8px 10px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    .button {
+        gap: 4px;
+    }
+
+    .button a {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    .navber ul li {
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+
+
+    /* Page */
+
+    .departments-page {
+        padding: 25px 12px 35px;
+    }
+
+    .department-title {
+        font-size: 25px;
+    }
+
+    .department-subtitle {
+        font-size: 14px;
+    }
+
+
+    /* Search */
+
+    .search-input {
+        height: 45px;
+        padding: 0 14px;
+        font-size: 14px;
+    }
+
+
+    /* Card */
+
+    .department-card {
+        padding: 13px;
+        border-radius: 12px;
+    }
+
+    .department-images {
+        height: 135px;
+        gap: 4px;
+    }
+
+    .department-name h3 {
+        font-size: 21px;
+    }
+
+
+    /* Info */
+
+    .department-info {
+        gap: 5px;
+    }
+
+    .info-item {
+        gap: 4px;
+    }
+
+    .info-item img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .info-number {
+        font-size: 17px;
+    }
+
+    .info-text {
+        font-size: 11px;
+    }
+
+
+    /* Explore */
+
+    .explore-btn {
+        width: 100%;
+        height: 43px;
+
+        padding: 8px 10px;
+
+        font-size: 13px;
+        border-radius: 7px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 18px 10px;
+        font-size: 13px;
+    }
+
+    .footer-nav ul {
+        gap: 8px 12px;
+    }
+}
