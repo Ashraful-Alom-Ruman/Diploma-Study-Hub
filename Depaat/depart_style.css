@@ -298,9 +298,7 @@ footer{
 
 @import "tailwindcss";
 
-/* =========================
-   RESET
-   ========================= */
+/* RESET*/
 
 * {
     margin: 0;
@@ -315,9 +313,7 @@ body {
 }
 
 
-/* =========================
-   HEADER
-   ========================= */
+/* HEADER*/
 
 .header1 {
     width: 100%;
@@ -339,9 +335,7 @@ body {
 }
 
 
-/* =========================
-   NAVBAR
-   ========================= */
+/* NAVBAR */
 
 .navber {
     flex: 1;
@@ -375,9 +369,7 @@ body {
 }
 
 
-/* =========================
-   HEADER BUTTON
-   ========================= */
+/* HEADER BUTTON */
 
 .button {
     display: flex;
@@ -404,9 +396,7 @@ body {
 }
 
 
-/* =========================
-   DEPARTMENT PAGE
-   ========================= */
+/* DEPARTMENT PAGE */
 
 .departments-page {
     width: 100%;
@@ -416,9 +406,7 @@ body {
 }
 
 
-/* =========================
-   DEPARTMENT HEADER
-   ========================= */
+/* DEPARTMENT HEADER */
 
 .department-header {
     width: 100%;
@@ -440,9 +428,7 @@ body {
 }
 
 
-/* =========================
-   SEARCH
-   ========================= */
+/* SEARCH */
 
 .department-search {
     width: 100%;
@@ -471,9 +457,7 @@ body {
 }
 
 
-/* =========================
-   DEPARTMENT CONTAINER
-   ========================= */
+/* DEPARTMENT CONTAINER */
 
 .departments-container {
     width: 100%;
@@ -483,9 +467,7 @@ body {
 }
 
 
-/* =========================
-   DEPARTMENT CARD
-   ========================= */
+/* DEPARTMENT CARD */
 
 .department-card {
     width: 100%;
@@ -511,9 +493,7 @@ body {
 }
 
 
-/* =========================
-   CARD IMAGES
-   ========================= */
+/* CARD IMAGES */
 
 .department-images {
     width: 100%;
@@ -565,9 +545,7 @@ body {
 }
 
 
-/* =========================
-   CARD NAME
-   ========================= */
+/* CARD NAME */
 
 .department-name {
     width: 100%;
@@ -583,9 +561,7 @@ body {
 }
 
 
-/* =========================
-   CARD FOOTER
-   ========================= */
+/* CARD FOOTER*/
 
 .department-footer {
     width: 100%;
@@ -634,9 +610,7 @@ body {
 }
 
 
-/* =========================
-   EXPLORE BUTTON
-   ========================= */
+/* EXPLORE BUTTON */
 
 .explore-btn {
     background: #2563eb;
@@ -666,9 +640,7 @@ body {
 }
 
 
-/* =========================
-   FOOTER
-   ========================= */
+/* FOOTER */
 
 footer {
     width: 100%;
