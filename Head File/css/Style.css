@@ -12,8 +12,6 @@
     width: 90%;
 
 }
-
-
 .navber ul {
     list-style: none;
     margin: 10px;
@@ -95,8 +93,11 @@
 
 main section:first-child {
     width: 100%;
-    min-height: 595px;
-    background: #eaf0f8;
+    min-height: 565px;
+    background-image: url("../Img/Gemini_Generated_Image_sbqo4usbqo4usbqo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -138,17 +139,18 @@ main section:first-child {
     border-radius: 30px;
     font-size: 24px;
 }
-
-.hero-img {
-    width: 45%;
-    
+.title button a {
+    transition: all 0.3s ease;
 }
 
-.hero-img img {
-    width: 90%;
-    height: 506px;
-    object-fit: contain;
-    
+.title button a:hover {
+    transform: translateY(-4px) scale(1.03);
+    background: #2878c7;
+    box-shadow: 0 8px 20px rgba(30, 87, 153, 0.35);
+}
+
+.title button a:active {
+    transform: translateY(-1px) scale(0.98);
 }
 
 main section {
