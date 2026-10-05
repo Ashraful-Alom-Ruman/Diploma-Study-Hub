@@ -1,0 +1,354 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+.semester-page {
+    width: min(1280px, 92%);
+    margin: auto;
+    padding: 60px 0 100px;
+}
+
+.page-header {
+    position: relative;
+    min-height: 320px;
+    padding: 65px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #0f172a 0%, #172554 48%, #2563eb 100%);
+    box-shadow: 0 30px 70px rgba(15, 23, 42, 0.18);
+}
+
+.page-header::before {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    right: -120px;
+    top: -210px;
+    border-radius: 50%;
+    background: rgba(96, 165, 250, 0.18);
+}
+
+.page-header::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 180px;
+    bottom: -240px;
+    border-radius: 50%;
+    background: rgba(129, 140, 248, 0.15);
+}
+
+.header-text {
+    position: relative;
+    z-index: 2;
+}
+
+.semester-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 17px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #dbeafe;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+   
+}
+
+.page-header h1 {
+    color: #ffffff;
+    font-size: 73px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -4px;
+}
+
+.section-top {
+    margin: 70px 0 32px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.section-top h2 {
+    color: #0f172a;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+}
+
+.section-top p {
+    padding: 9px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 50px;
+    background: #75e4d1;
+    color: #181818;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.book-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 55px rgba(15, 23, 42, 0.13);
+}
+
+.book-cover {
+    position: relative;
+    height: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.book-cover::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: -135px;
+    right: -75px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.book-cover::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    bottom: -115px;
+    left: -65px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mathematics {
+    background: linear-gradient(145deg, #1d4ed8, #4338ca);
+}
+
+.physics {
+    background: linear-gradient(145deg, #6d28d9, #9333ea);
+}
+
+.chemistry {
+    background: linear-gradient(145deg, #047857, #0f766e);
+}
+
+.bangla {
+    background: linear-gradient(145deg, #be123c, #dc2626);
+}
+
+.english {
+    background: linear-gradient(145deg, #0369a1, #0891b2);
+}
+
+.drawing {
+    background: linear-gradient(145deg, #c2410c, #ea580c);
+}
+
+.electrical {
+    background: linear-gradient(145deg, #a16207, #ca8a04);
+}
+
+.book-cover img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    max-width: 84%;
+    max-height: 84%;
+    object-fit: contain;
+    transition: transform 0.45s ease;
+}
+
+.book-card:hover .book-cover img {
+    transform: scale(1.08);
+}
+
+.book-info {
+    padding: 28px 27px 30px;
+}
+
+.subject-label {
+    display: inline-block;
+    margin-bottom: 9px;
+    color: #2563eb;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.book-info h3 {
+    margin: 4px 0 10px;
+    color: #0f172a;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.subject-code {
+    margin-bottom: 23px;
+    color: #131313;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.view-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 18px;
+    border: 1px solid #dbeafe;
+    border-radius: 11px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+    border-color: #2563eb;
+    background: #2563eb;
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+@media (max-width: 1050px) {
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-header {
+        min-height: 280px;
+        padding: 50px;
+    }
+}
+
+@media (max-width: 650px) {
+    .semester-page {
+        width: 94%;
+        padding: 30px 0 65px;
+    }
+
+    .page-header {
+        min-height: 230px;
+        padding: 35px 27px;
+        border-radius: 23px;
+    }
+
+    .semester-label {
+        font-size: 13px;
+        letter-spacing: 2px;
+        padding: 8px 13px;
+        margin-bottom: 18px;
+    }
+
+    .page-header h1 {
+        font-size: 50px;
+        letter-spacing: -2.5px;
+    }
+
+    .section-top {
+        margin: 48px 0 25px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 11px;
+    }
+
+    .section-top h2 {
+        font-size: 29px;
+    }
+
+    .section-top p {
+        font-size: 13px;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+        gap: 21px;
+    }
+
+    .book-cover {
+        height: 225px;
+    }
+
+    .book-info {
+        padding: 25px;
+    }
+
+    .subject-label {
+        font-size: 18px;
+    }
+
+    .book-info h3 {
+        font-size: 25px;
+    }
+
+    .subject-code {
+        font-size: 14px;
+    }
+
+    .view-btn {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .page-header {
+        padding: 30px 22px;
+    }
+
+    .semester-label {
+        font-size: 11px;
+    }
+
+    .page-header h1 {
+        font-size: 42px;
+    }
+
+    .section-top h2 {
+        font-size: 26px;
+    }
+
+    .book-cover {
+        height: 205px;
+    }
+}
+
