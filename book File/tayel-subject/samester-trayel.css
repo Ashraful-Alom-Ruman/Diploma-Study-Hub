@@ -26,30 +26,11 @@ body {
     align-items: center;
     overflow: hidden;
     border-radius: 30px;
-    background: linear-gradient(135deg, #0f172a 0%, #172554 48%, #2563eb 100%);
+    background-image: url("/book File/tayel-subject/trayel-img/hero img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 30px 70px rgba(15, 23, 42, 0.18);
-}
-
-.page-header::before {
-    content: "";
-    position: absolute;
-    width: 430px;
-    height: 430px;
-    right: -120px;
-    top: -210px;
-    border-radius: 50%;
-    background: rgba(96, 165, 250, 0.18);
-}
-
-.page-header::after {
-    content: "";
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    right: 180px;
-    bottom: -240px;
-    border-radius: 50%;
-    background: rgba(129, 140, 248, 0.15);
 }
 
 .header-text {
@@ -118,7 +99,6 @@ body {
     border-radius: 22px;
     background: #ffffff;
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .book-card:hover {
@@ -157,41 +137,13 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.mathematics {
-    background: linear-gradient(145deg, #1d4ed8, #4338ca);
-}
-
-.physics {
-    background: linear-gradient(145deg, #6d28d9, #9333ea);
-}
-
-.chemistry {
-    background: linear-gradient(145deg, #047857, #0f766e);
-}
-
-.bangla {
-    background: linear-gradient(145deg, #be123c, #dc2626);
-}
-
-.english {
-    background: linear-gradient(145deg, #0369a1, #0891b2);
-}
-
-.drawing {
-    background: linear-gradient(145deg, #c2410c, #ea580c);
-}
-
-.electrical {
-    background: linear-gradient(145deg, #a16207, #ca8a04);
-}
-
 .book-cover img {
     position: relative;
     z-index: 2;
-    width: 100%;
-    height: 100%;
-    max-width: 84%;
-    max-height: 84%;
+    width: 131%;
+    height: 127%;
+    max-width: 100%;
+    max-height: 119%;
     object-fit: contain;
     transition: transform 0.45s ease;
 }
