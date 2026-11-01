@@ -68,3 +68,71 @@
     cursor: pointer;
 }
 
+.search1 form {
+    width: 180px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dce4ed;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search1 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.search1 img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.banner {
+    width: 92%;
+    height: 322px;
+    background-image: url("/Question Bank/img/Blue Study Desk with Books and Lamp.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 15px 5%;
+    position: relative;
+    overflow: hidden;
+}
+.banner-content {
+    position: relative;
+    color: white;
+}
+
+.small-title {
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 5px;
+}
+
+.small-title span {
+    background: white;
+    color: #0756b9;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.banner-content h1 {
+    font-size: 67px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.banner-content p {
+    font-size: 24px;
+    color: #e4efff;
+}
+
+
