@@ -92,7 +92,7 @@
 }
 
 .banner {
-    width: 92%;
+    width: 91%;
     height: 322px;
     background-image: url("/Question Bank/img/Blue Study Desk with Books and Lamp.png");
     background-size: cover;
@@ -228,5 +228,209 @@
 
 .search-button span {
     font-size: 28px;
+}
+
+.subject-section {
+    width: 94%;
+    padding: 18px 3.3%;
+    background: #f1f8ff;
+    font-family: Arial, sans-serif;
+}
+
+.subject-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.subject-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.title-icon {
+    width: 27px;
+    height: 32px;
+    background: #1769dc;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.subject-title h2 {
+    font-size: 25px;
+    color: #17345d;
+    font-weight: 700;
+}
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.subject-card {
+    min-width: 0;
+    height: 145px;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    background: #fff;
+    border: 1px solid #dce8f5;
+    border-radius: 8px;
+}
+
+.subject-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(30, 75, 130, 0.12);
+}
+
+.book-image {
+    width: 90px;
+    height: 116px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.book-info h3 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #17365f;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.semester {
+    background: #dff8ee;
+    color: #21865f;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 9px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.book-info a {
+    width: 100%;
+    height: 27px;
+    background: #1767e8;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.book-info a:hover {
+    background: #064bbd;
+}
+
+.book-info a span {
+    font-size: 13px;
+}
+
+.footer {
+    width: 94%;
+    min-height: 85px;
+    padding: 15px 3.3%;
+    background: #073779;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.cap-icon {
+    font-size: 35px;
+}
+
+.footer-logo h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.footer-logo p {
+    font-size: 10px;
+    color: #d3e2fa;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #e4edfa;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.footer-links span {
+    color: #8ba9d0;
+    font-size: 10px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-social {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-social a {
+    width: 21px;
+    height: 21px;
+    background: white;
+    color: #073779;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 9px;
+    color: #d3e2fa;
 }
 
